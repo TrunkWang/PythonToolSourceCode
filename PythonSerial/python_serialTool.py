@@ -88,6 +88,7 @@ if __name__ == "__main__" :
 	portlist = get_system_comlist()
 	comcount = show_comlist(portlist)
 	if comcount <= 0 :
+		print 'error: no com ports be found'
 		exit()
 	serialFd = open_system_com(portlist)
 
